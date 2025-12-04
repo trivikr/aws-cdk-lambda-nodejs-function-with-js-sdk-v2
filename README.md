@@ -11,6 +11,7 @@ Test CDK stack which creates a Lambda Node.js Function which uses JS SDK v2
 ## Setup
 
 - Run `pnpm cdk deploy` deploy this stack to your AWS account/region.
+- Examine the function created. It'll have only one file `index.js` which has the bundle. The `package.json` file is not deployed to Lambda.
 
 ## Cleanup
 
