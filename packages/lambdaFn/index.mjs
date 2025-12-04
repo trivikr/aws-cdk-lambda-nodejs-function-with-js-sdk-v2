@@ -1,5 +1,5 @@
-import AWS from "aws-sdk";
+import STS from "aws-sdk/clients/sts";
 
-const client = new AWS.DynamoDB();
+const client = new STS();
 
-export const handler = async () => client.listTables({});
+export const handler = async () => client.getCallerIdentity();
