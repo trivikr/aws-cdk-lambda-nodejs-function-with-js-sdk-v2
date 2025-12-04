@@ -8,8 +8,8 @@ export class AwsCdkLambdaNodeJsFunctionWithSdkV2Stack extends Stack {
 
     const lambdaFnPath = join(__dirname, "..", "..", "lambdaFn");
 
-    new aws_lambda_nodejs.NodejsFunction(this, "FunctionUsingBundleSdkV2", {
-      description: "NodejsFunction uses bundled JS SDK v2",
+    new aws_lambda_nodejs.NodejsFunction(this, "FunctionWithSdkV2", {
+      description: "NodejsFunction with bundled JS SDK v2",
       entry: join(lambdaFnPath, "index.mjs"),
       handler: "index.handler",
       runtime: aws_lambda.Runtime.NODEJS_24_X,
