@@ -12,4 +12,8 @@ Test CDK stack which creates a Lambda Node.js Function which uses JS SDK v2
 
 - Run `pnpm cdk deploy` deploy this stack to your AWS account/region.
 
+## Cleanup
+
+- Run `pnpm cdk destroy`.
+
 [Node.js]: https://nodejs.org/en/download
